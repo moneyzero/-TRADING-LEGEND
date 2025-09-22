@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trading Legend — Binary & Crypto</title>
+  <meta name="description" content="TRADING LEGEND — Binary & Crypto trading, YouTuber, Mentor. Live trades, market analysis." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--accent:#FBBF24}
+    .glass{background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); backdrop-filter: blur(6px);}    
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-gray-100 antialiased">
+  <!-- Top bar -->
+  <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <img src="https://yt3.googleusercontent.com/Dy2dPQhsvl-Zs_XVaF6i1mU4loJDdrASqa4Ywaj58d-Hab0fc32Avy5bSTWuBNRMnG-QEdjxrlA=s160-c-k-c0x00ffffff-no-rj" alt="Trading Legend Logo" class="w-12 h-12 rounded-full" />
+      <div>
+        <h1 class="text-2xl font-extrabold">TRADING LEGEND</h1>
+        <p class="text-sm text-gray-300">Binary & Crypto Trading • YouTuber • Mentor</p>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#about" class="hover:text-yellow-300">About</a>
+      <a href="#videos" class="hover:text-yellow-300">Videos</a>
+      <a href="#contact" class="hover:text-yellow-300">Contact</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="menuBtn" class="px-3 py-2 rounded bg-gray-800/60">Menu</button>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6">
+    <!-- Hero -->
+    <section class="grid md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Sikhye Binary aur Crypto trading — seedhe, saf, practical tareeke</h2>
+        <p class="mt-4 text-gray-300">TRADING LEGEND ke saath live trades, weekly market analysis aur personalised mentoring. Chahe aap beginner ho ya intermediate — yahan practical skills milenge.</p>
+
+        <div class="mt-6 flex gap-4">
+          <a href="#contact" class="px-5 py-3 bg-yellow-400 text-black rounded-lg font-semibold shadow hover:scale-105 transform transition">Contact</a>
+          <a href="#videos" class="px-5 py-3 border border-gray-700 rounded-lg text-sm hover:border-yellow-300">Latest YouTube Video</a>
+        </div>
+
+        <p class="mt-6 text-sm text-gray-400"><strong>Note:</strong> Trading involves risk. Past performance is not a guarantee of future results.</p>
+      </div>
+
+      <div class="rounded-xl overflow-hidden border border-gray-800 bg-black glass">
+        <div class="aspect-video w-full">
+          <iframe title="Latest Video" src="https://www.youtube.com/embed/RUAMah8mTCM" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold">Latest Market Breakdown</h3>
+          <p class="text-sm text-gray-400 mt-2">Dekhiye Trading Legend ke naye videos jahan woh apne trades aur analysis share karte hai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-10">
+      <div class="bg-gray-900/30 p-6 rounded-2xl border border-gray-800">
+        <h3 class="text-2xl font-bold">About TRADING LEGEND</h3>
+        <p class="mt-3 text-gray-300">Main focus: simple and repeatable setups for binary and crypto trades, risk management, and clear commentary. Yeh channel un logon ke liye jo fast-paced markets mein discipline seekhna chahte hain.</p>
+      </div>
+    </section>
+
+    <!-- Latest Videos -->
+    <section id="videos" class="py-10">
+      <h3 class="text-2xl font-bold">Latest 3 Videos</h3>
+      <p class="text-sm text-gray-400 mt-2">Neeche Trading Legend ke latest 3 YouTube videos embed hain.</p>
+
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-lg overflow-hidden border border-gray-800 bg-black">
+          <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/RUAMah8mTCM" title="video1" frameborder="0" allowfullscreen></iframe>
+          <div class="p-3">
+            <h4 class="font-semibold">Video 1</h4>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden border border-gray-800 bg-black">
+          <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/nOgpm4vKLlw" title="video2" frameborder="0" allowfullscreen></iframe>
+          <div class="p-3">
+            <h4 class="font-semibold">Video 2</h4>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden border border-gray-800 bg-black">
+          <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/hAlbv1CkRus" title="video3" frameborder="0" allowfullscreen></iframe>
+          <div class="p-3">
+            <h4 class="font-semibold">Video 3</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12">
+      <h3 class="text-2xl font-bold">Contact</h3>
+      <p class="text-sm text-gray-400 mt-2">Email: <a href="mailto:tradinglegend@example.com" class="underline">tradinglegend@example.com</a></p>
+      <form class="mt-6 grid sm:grid-cols-2 gap-4" onsubmit="handleForm(event)">
+        <input required name="name" placeholder="Your name" class="p-3 rounded bg-gray-900 border border-gray-800" />
+        <input required name="email" type="email" placeholder="Email" class="p-3 rounded bg-gray-900 border border-gray-800" />
+        <textarea name="message" placeholder="Short message" class="p-3 rounded bg-gray-900 border border-gray-800 sm:col-span-2"></textarea>
+        <button type="submit" class="sm:col-span-2 px-4 py-3 rounded bg-yellow-400 text-black font-semibold">Send Request</button>
+      </form>
+      <div id="formMsg" class="mt-4 text-sm text-green-400"></div>
+    </section>
+
+    <!-- Social Join Buttons -->
+    <section class="py-10 text-center">
+      <h3 class="text-xl font-bold mb-4">Join Trading Legend on</h3>
+      <div class="flex justify-center gap-6">
+        <a href="https://t.me/tradinglegend76" target="_blank" class="px-6 py-3 rounded-lg bg-blue-500 text-white font-semibold">Join Telegram</a>
+        <a href="https://www.youtube.com/@tradinglegend583" target="_blank" class="px-6 py-3 rounded-lg bg-red-600 text-white font-semibold">Subscribe YouTube</a>
+      </div>
+    </section>
+
+    <footer class="py-8 text-center text-sm text-gray-500">© <span id="year"></span> TRADING LEGEND — Trading is risky. Not financial advice.</footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+      alert('Use the links at top on larger screens.');
+    });
+
+    function handleForm(e){
+      e.preventDefault();
+      const f = e.target;
+      document.getElementById('formMsg').textContent = 'Thanks! Request received — we will contact you soon.';
+      f.reset();
+    }
+  </script>
+</body>
+</html>
